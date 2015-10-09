@@ -1,0 +1,6 @@
+framework module Pods_TextBookr {
+  umbrella header "Pods-TextBookr-umbrella.h"
+
+  export *
+  module * { export * }
+}

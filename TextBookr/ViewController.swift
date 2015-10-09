@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import FBSDKCoreKit
 import ParseFacebookUtilsV4
-
+import SwiftyJSON
 
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var sellButton: UIButton!
@@ -91,12 +91,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     
     override func viewDidLoad() {
+        let bookApi = GoogleBooks()
+        
+        bookApi.isbnRequest("0262032937"){
+            (result: AnyObject) in
+            let books = result as! NSDictionary
+        }
+        
+        bookApi.searchRequest(Title: "Introduction To Algorithms"){
+            (result: AnyObject) in
+            let books = result as! NSDictionary
+            print("\(books)")
+        }
+        bookApi.searchRequest(Author: "PRAKASH"){
+            (result: AnyObject) in
+            let books = result as! NSDictionary
+            print("\(books)")
+        }
+        
+        
+        
         super.viewDidLoad()
         self.titleField.delegate = self
         self.courseNumberField.delegate = self
         self.authorField.delegate = self
         self.facultyField.delegate = self
-    
+        
+        
         self.view.addSubview(self.titleField)
         self.view.addSubview(self.authorField)
         self.view.addSubview(self.courseNumberField)

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextBookr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-vd-pVi">
+                                <rect key="frame" x="281" y="197" width="38" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="164" width="38" height="40"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McL-dc-KS6">
+                                <rect key="frame" x="270" y="311" width="20" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="218" width="20" height="42"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4T-bF-N7K">
+                                <rect key="frame" x="326" y="244" width="68" height="49"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="buy"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="213" y="159" width="68" height="50"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="are you looking to . . ." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHB-Wo-JrK">
+                                <rect key="frame" x="69" y="9" width="328" height="126"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="58" y="36" width="284" height="126"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-Io-dF6">
+                                <rect key="frame" x="204" y="123" width="59" height="57"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="sell"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="58" y="157" width="60" height="53"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MHB-Wo-JrK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="36" id="ALn-Nk-hJN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MHB-Wo-JrK" secondAttribute="trailing" constant="38" id="Adg-Yd-V3v"/>
+                            <constraint firstItem="KcA-Io-dF6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="157" id="JuA-Vj-e9x"/>
+                            <constraint firstItem="KcA-Io-dF6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="Tey-z0-1gr"/>
+                            <constraint firstItem="MHB-Wo-JrK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="WVS-fb-q6e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t4T-bF-N7K" secondAttribute="trailing" constant="32" id="ehe-v0-30i"/>
+                            <constraint firstItem="t4T-bF-N7K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="159" id="oOd-TE-x7N"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ALn-Nk-hJN"/>
+                                <exclude reference="Adg-Yd-V3v"/>
+                                <exclude reference="WVS-fb-q6e"/>
+                                <exclude reference="JuA-Vj-e9x"/>
+                                <exclude reference="Tey-z0-1gr"/>
+                                <exclude reference="ehe-v0-30i"/>
+                                <exclude reference="oOd-TE-x7N"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ALn-Nk-hJN"/>
+                                <include reference="Adg-Yd-V3v"/>
+                                <include reference="WVS-fb-q6e"/>
+                                <include reference="JuA-Vj-e9x"/>
+                                <include reference="Tey-z0-1gr"/>
+                                <include reference="ehe-v0-30i"/>
+                                <include reference="oOd-TE-x7N"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="areYouLooking" destination="MHB-Wo-JrK" id="pyc-sh-CnF"/>
+                        <outlet property="buyButton" destination="t4T-bF-N7K" id="zx3-YT-ea6"/>
+                        <outlet property="buyButtonHeightConstraint" destination="oOd-TE-x7N" id="BJ2-ak-Uqt"/>
+                        <outlet property="or" destination="6OS-vd-pVi" id="JxB-xE-8nh"/>
+                        <outlet property="questionMark" destination="McL-dc-KS6" id="xVq-OC-U2i"/>
+                        <outlet property="sellButton" destination="KcA-Io-dF6" id="Coa-Mc-J65"/>
+                        <outlet property="sellButtonHeightConstraint" destination="JuA-Vj-e9x" id="euS-wx-tjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="337"/>
+        </scene>
+    </scenes>
+</document>
